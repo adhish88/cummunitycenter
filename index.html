@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Flora Community Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <header role="banner">
+        <div class="container">
+            <h1>La Flora Community Center</h1>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#announcements">Announcements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="contrastToggle" aria-label="Toggle high contrast mode">Toggle High Contrast</button>
+            <div class="text-resize-controls" aria-label="Text resizing controls">
+                <button id="increaseText" aria-label="Increase text size">A+</button>
+                <button id="decreaseText" aria-label="Decrease text size">A-</button>
+                <button id="resetText" aria-label="Reset text size">A</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section id="home" class="container">
+            <h2>Welcome to La Flora Community Center</h2>
+            <p>Our community center is dedicated to providing a safe and welcoming environment for all residents of La Flora. Join us for various activities, events, and programs that foster community spirit and engagement.</p>
+            <img src="pictures\LF.avif" alt="La Flora Community Center" class="main-image">
+        </section>
+
+        <section id="activities" class="container">
+            <h2>Ongoing Activities</h2>
+            <ul>
+                <li>Yoga Classes - Every Monday and Wednesday</li>
+                <li>Art Workshops - Every Friday</li>
+                <li>Book Club - Every first Saturday of the month</li>
+            </ul>
+            <div class="gallery">
+                <img src="pictures\yoga class.jpg" alt="Yoga Classes">
+                <img src="pictures\art wrokshop.jpg" alt="Art Workshop">
+                <img src="pictures\bookclub.jpg" alt="Book Club">
+            </div>
+        </section>
+
+        <section id="events" class="container">
+            <h2>Past Events</h2>
+            <ul>
+                <li>Annual Community Picnic - June 2023</li>
+                <li>Spring Cleanup - April 2023</li>
+                <li>Charity Run - March 2023</li>
+            </ul>
+            <div class="gallery">
+                <img src="pictures\community picnic.jpg" alt="Community Picnic">
+                <img src="pictures\Spring.jpg" alt="Spring Cleanup">
+                <img src="pictures\charityrun.jpg" alt="Charity Run">
+            </div>
+        </section>
+
+        <section id="announcements" class="container">
+            <h2>Announcements</h2>
+            <article>
+                <h3>Community Meeting</h3>
+                <p>Join us for a community meeting on August 15th to discuss upcoming projects and initiatives.</p>
+            </article>
+            <article>
+                <h3>Health and Safety Guidelines</h3>
+                <p>Please adhere to the new health and safety guidelines issued by the Central Government.</p>
+            </article>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <form aria-label="Contact form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2024 La Flora Community Center. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
